@@ -11,6 +11,10 @@ class ContentModel: ObservableObject {
     
     @Published var modules = [Module]()
     
+    @Published var currentModule: Module?
+    var currentModuleIndex = 0
+    
+    
     var styleData: Data?
     
     init() {
@@ -22,14 +26,14 @@ class ContentModel: ObservableObject {
         let jsonURL = Bundle.main.url(forResource: "data", withExtension: "json")
         
         do {
-        
-        let jsonData = try Data(contentsOf: jsonURL!)
-        let jsonDecoder = JSONDecoder()
             
-        
-        let modules = try jsonDecoder.decode([Module].self, from: jsonData)
-        self.modules = modules
-        
+            let jsonData = try Data(contentsOf: jsonURL!)
+            let jsonDecoder = JSONDecoder()
+            
+            
+            let modules = try jsonDecoder.decode([Module].self, from: jsonData)
+            self.modules = modules
+            
         } catch {
             print("Couldn't parse local data.")
         }
@@ -47,6 +51,19 @@ class ContentModel: ObservableObject {
             // Log error
             print("Couldn't parse style data")
         }
+        
+    }
+    
+    func beginModule(_ moduleId:Int) {
+        
+        for index in 0..<modules.count {
+            if modules[index].id == moduleId {
+                currentModuleIndex = index
+                break
+            }
+        }
+        
+        currentModule = modules[currentModuleIndex]
         
     }
 }
