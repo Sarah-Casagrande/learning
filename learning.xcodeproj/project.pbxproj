@@ -10,6 +10,7 @@
 		E1549BDC28A2D29200F77509 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1549BDB28A2D29200F77509 /* RectangleCard.swift */; };
 		E1549BDE28A2DF2F00F77509 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1549BDD28A2DF2F00F77509 /* TestView.swift */; };
 		E163DC09289EE55A00AA3846 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E163DC08289EE55A00AA3846 /* CodeTextView.swift */; };
+		E1654DCD28A4315F00EEF145 /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1654DCC28A4315F00EEF145 /* TestResultView.swift */; };
 		E1665FA0289C0A0B0051DAD4 /* learningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665F9F289C0A0B0051DAD4 /* learningApp.swift */; };
 		E1665FA4289C0A0C0051DAD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1665FA3289C0A0C0051DAD4 /* Assets.xcassets */; };
 		E1665FA7289C0A0C0051DAD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1665FA6289C0A0C0051DAD4 /* Preview Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		E1549BDB28A2D29200F77509 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		E1549BDD28A2DF2F00F77509 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		E163DC08289EE55A00AA3846 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
+		E1654DCC28A4315F00EEF145 /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
 		E1665F9C289C0A0B0051DAD4 /* learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1665F9F289C0A0B0051DAD4 /* learningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningApp.swift; sourceTree = "<group>"; };
 		E1665FA3289C0A0C0051DAD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				E163DC08289EE55A00AA3846 /* CodeTextView.swift */,
 				E1549BDB28A2D29200F77509 /* RectangleCard.swift */,
 				E1549BDD28A2DF2F00F77509 /* TestView.swift */,
+				E1654DCC28A4315F00EEF145 /* TestResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1549BDE28A2DF2F00F77509 /* TestView.swift in Sources */,
+				E1654DCD28A4315F00EEF145 /* TestResultView.swift in Sources */,
 				E1665FA0289C0A0B0051DAD4 /* learningApp.swift in Sources */,
 				E1665FBD289C316A0051DAD4 /* HomeViewRow.swift in Sources */,
 				E1DAA749289D78880078F801 /* ContentView.swift in Sources */,
